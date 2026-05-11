@@ -1,0 +1,13 @@
+{
+  "name": "ecogu-open-innovation",
+  "version": "1.0.0",
+  "description": "ECOGU Open Innovation Platform - Submit, vote and progress sustainability ideas through a Stage-Gate workflow.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.19.2"
+  }
+}

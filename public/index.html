@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ECOGU Open Innovation Platform</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>🌱 ECOGU Open Innovation</h1>
+      <nav>
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="submit.html">Submit Idea</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="intro">
+        <h2>Idea Dashboard</h2>
+        <p>Browse, vote and discuss sustainability ideas across plastic, wood and paper.</p>
+      </section>
+
+      <div id="ideas" class="ideas-grid">
+        <p class="muted">Loading ideas…</p>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+      loadIdeas();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Submit Idea — ECOGU</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>🌱 ECOGU Open Innovation</h1>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="submit.html" class="active">Submit Idea</a>
+      </nav>
+    </header>
+
+    <main class="container narrow">
+      <h2>Submit a New Idea</h2>
+      <form id="idea-form" class="card">
+        <label>
+          Title
+          <input name="title" required maxlength="120" />
+        </label>
+        <label>
+          Description
+          <textarea name="description" required rows="5"></textarea>
+        </label>
+        <label>
+          Category
+          <select name="category" required>
+            <option value="">Select…</option>
+            <option value="plastic">Plastic</option>
+            <option value="wood">Wood</option>
+            <option value="paper">Paper</option>
+          </select>
+        </label>
+        <label>
+          Sustainability Impact
+          <textarea name="impact" required rows="3" placeholder="How does this idea improve sustainability?"></textarea>
+        </label>
+        <button type="submit" class="primary">Submit Idea</button>
+        <p id="form-msg" class="muted"></p>
+      </form>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+      bindSubmitForm();
+    </script>
+  </body>
+</html>
